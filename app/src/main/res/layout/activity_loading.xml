@@ -5,6 +5,6 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/momsee"
-    tools:contexts="com.example.android0211.LoadingActivity">
+    tools:contexts="com.example.android0211.Refactor.Activity.loadingActivity">
 
 </LinearLayout>

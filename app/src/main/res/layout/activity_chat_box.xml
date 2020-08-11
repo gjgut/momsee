@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/chatback"
-    tools:context=".Chatting.ChatBoxActivity">
+    tools:context=".Refactor.Activity.chatboxActivity">
     <LinearLayout
         android:weightSum="3"
         android:orientation="vertical"

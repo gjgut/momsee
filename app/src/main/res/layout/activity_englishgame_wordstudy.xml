@@ -5,7 +5,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-    <com.example.android0211.EnglishGame.StudyView
+    <com.example.android0211.Refactor.Util.Game.EnglishGame.StudyView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"/>
 </FrameLayout>

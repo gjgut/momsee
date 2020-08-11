@@ -39,7 +39,7 @@
         android:usesCleartextTraffic="true">
 
         <receiver
-            android:name=".MyReceiver"
+            android:name=".Refactor.Receiver.myReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -47,12 +47,12 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".FCMUse.MyFCMService">
+        <service android:name=".Refactor.Service.msFCMService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".FCMUse.OverlayService">
+        <service android:name=".Refactor.Service.overlayService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
@@ -60,7 +60,7 @@
 
 
         <receiver
-            android:name=".FCMUse.SampleDeviceAdminReceiver"
+            android:name=".Refactor.Receiver.msDeviceAdminReceiver"
             android:permission="android.permission.BIND_DEVICE_ADMIN">
             <meta-data
                 android:name="android.app.device_admin"
@@ -72,17 +72,17 @@
                 <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".mBroadCastReceiver">
+        <receiver android:name=".Refactor.Receiver.mBroadCastReceiver">
             <intent-filter>
                 <action android:name="SEND_BROAD_CAST" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".Child_mission$mBroadcastReceiver">
+        <receiver android:name=".Refactor.Activity.Child.childMission$mBroadcastReceiver">
             <intent-filter>
                 <action android:name="SEND_BROAD_CAST" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".Child_main$mBroadcastReceiver">
+        <receiver android:name=".Refactor.Activity.Child.childMain$mBroadcastReceiver">
             <intent-filter>
                 <action android:name="SEND_BROAD_CAST" />
             </intent-filter>
@@ -93,55 +93,52 @@
             android:value="AIzaSyCwdrCO8axM7igdMB8-wZsOneKd5dbXKUg" />
 
         <activity
-            android:name=".LoadingActivity"
+            android:name=".Refactor.Activity.loadingActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Refactor.Activity.loginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MathGame.MathGameActivity" />
-        <activity android:name=".Maps" />
-        <activity android:name=".P_permissionActivity" />
-        <activity android:name=".Parent_main" />
+        <activity android:name=".Refactor.Util.Game.MathGame.MathGameActivity" />
+        <activity android:name=".Refactor.Activity.Parent.parentMaps" />
+        <activity android:name=".Refactor.Activity.Parent.parentPermission" />
+        <activity android:name=".Refactor.Activity.Parent.parentMain" />
         <activity
-            android:name=".EnglishGame.StartCsc"
+            android:name=".Refactor.Util.Game.EnglishGame.StartCsc"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".EnglishGame.ActivityStudy"
+            android:name=".Refactor.Util.Game.EnglishGame.ActivityStudy"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
-            android:name=".EnglishGame.ActivityStudy2"
+            android:name=".Refactor.Util.Game.EnglishGame.ActivityStudy2"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
-            android:name=".EnglishGame.ActivityStudy3"
+            android:name=".Refactor.Util.Game.EnglishGame.ActivityStudy3"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
-            android:name=".EnglishGame.ActivityStudy5"
+            android:name=".Refactor.Util.Game.EnglishGame.ActivityStudy5"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
-            android:name=".EnglishGame.About"
+            android:name=".Refactor.Util.Game.EnglishGame.About"
             android:screenOrientation="landscape" />
-        <activity android:name=".SelectActivty" />
-        <activity android:name=".activity_child_info" />
-        <activity android:name=".C_permissionActivity" />
-        <activity android:name=".Child_main" />
-        <activity android:name=".Child_mission" />
-        <activity android:name=".Child_name" />
-        <activity android:name=".Chatting.Child_chatting" />
-        <activity android:name=".Chatting.Parent_chatting" />
-        <activity android:name=".Chatting.ChatBoxActivity" />
-        <activity android:name=".Maps" />
-        <activity android:name=".CameraActivity" />
-        <activity android:name=".P_permissionActivity" />
-        <activity android:name=".Parent_main" />
-        <activity android:name=".CheckImage" />
+        <activity android:name=".Refactor.Activity.selectActivty" />
+        <activity android:name=".Refactor.Activity.Parent.parentChildList" />
+        <activity android:name=".Refactor.Activity.Child.childPermission" />
+        <activity android:name=".Refactor.Activity.Child.childMain" />
+        <activity android:name=".Refactor.Activity.Child.childMission" />
+        <activity android:name=".Refactor.Activity.Child.childName" />
+        <activity android:name=".Refactor.Activity.Child.childChatting" />
+        <activity android:name=".Refactor.Activity.Parent.parentChatting" />
+        <activity android:name=".Refactor.Activity.chatboxActivity" />
+        <activity android:name=".Refactor.Activity.cameraActivity" />
+        <activity android:name=".Refactor.Activity.Parent.parentCheckImage" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/chat"
-    tools:context=".Chatting.Parent_chatting">
+    tools:context=".Refactor.Activity.Parent.parentChatting">
 
     <EditText
         android:id="@+id/nickname"
